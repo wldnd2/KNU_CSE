@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSE</title>
+    <link rel="shortcut icon" href="./images/cse_logo_qdE_icon.ico" />
+    <link rel="stylesheet" href="./css/all.css" />
+    <link rel="stylesheet" href="./css/analysis_style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <!-- menu -->
+        <header>
+          <a href="./index.html"
+            ><img src="./images/cse_logo.jpg" class="logo" alt=""
+          /></a>
+          <div class="toggle" onclick="toggleMenu()">
+            <img src="./images/menu.png" class="menu" alt="" />
+            <img src="./images/close.png" class="close" alt="" />
+          </div>
+          <ul class="navigation">
+            <li><a href="./index.html" data-text="납부">납부</a></li>
+            <li><a href="./account.html" data-text="장부">장부</a></li>
+            <li><a href="./analysis.html" data-text="분석">분석</a></li>
+          </ul>
+        </header>
+        <!-- contents -->
+        <section class="contents">
+          <h2>Analysis</h2>
+          <textarea
+            name="StudentIDs"
+            id="all_id"
+            cols="15"
+            rows="10"
+          ></textarea>
+          <div class="input_box">
+            <input
+              type="submit"
+              class="submit"
+              onclick="toggleSubmit(); {userAction()};"
+            />
+          </div>
+        </section>
+        <!-- result -->
+        <div class="result">
+          <h2>미납자 명단</h2>
+          <div class="show">
+            <ul></ul>
+          </div>
+          <div class="back"><a href="./analysis.html">홈</a></div>
+        </div>
+      </div>
+    </div>
+    <!-- js file -->
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="./js/toggle.js"></script>
+    <script src="./js/analysis_fee.js"></script>
+    <!-- 참고: https://icons8.com/illustrations -->
+  </body>
+</html>

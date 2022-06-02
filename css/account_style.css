@@ -1,0 +1,61 @@
+.container .box .result {
+  position: relative;
+  display: flex;
+  gap: 30px 0;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+  height: 430px;
+}
+
+.container .box .result h2 {
+  font-size: 2rem;
+  letter-spacing: 3px;
+  background: rgba(255, 255, 255, 0.35);
+  padding: 5px 30px;
+  border-radius: 10px;
+  list-style: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.06),
+    -5px -5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.container .box .result .show {
+  border-radius: 10px;
+  overflow: auto;
+}
+
+.container .box .result.active .show::-webkit-scrollbar {
+  width: 10px;
+}
+
+.container .box .result .show ul {
+  width: 300px;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 20px 25px;
+  border-radius: 10px;
+  list-style: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.06),
+    -5px -5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.container .box .result .show ul li {
+  font-size: 1.6em;
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+
+.container .box .result .back a {
+  text-decoration: none;
+  color: #000;
+  font-size: 2rem;
+  background: rgba(255, 255, 255, 0.35);
+  padding: 8px 60px;
+  border-radius: 10px;
+  list-style: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.06),
+    -5px -5px 20px rgba(0, 0, 0, 0.08);
+}
