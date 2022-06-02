@@ -4,7 +4,7 @@ const userAction = async () => {
   const id = document.getElementById("id").value;
   // API호출
   const response = await fetch(
-    `https://raipen.gabia.io/API/checkDues/?number=${id}`
+    `https://raipen.gabia.io/API/checkDues/?number=${id}&name=${Name}`
   );
   // json저장
   const myJson = await response.json();
@@ -22,7 +22,7 @@ const userAction = async () => {
     $(".result.active .show").append(htmlData);
     return false;
   }
-  if (myJson.dues) {
+  if (myJson.dues && myJson.isStudent) {
     document.getElementById("result_img").src = "./images/developer2.png";
     let htmlData =
       "<ul>" +
