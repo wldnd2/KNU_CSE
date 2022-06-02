@@ -12,7 +12,8 @@ const userAction = async () => {
   // console.log(myJson);
   // 이름과 학번중 비어있는 경우
   if (Name == "" || id == "" || !myJson.isStudent) {
-    document.getElementById("result_img").src = "./images/developer1.png";
+    const img = document.getElementById("result_img");
+    img.setAttribute("src", "./images/developer1.png");
     const htmlData =
       "<ul>" +
       "<li>" +
@@ -23,7 +24,8 @@ const userAction = async () => {
     return false;
   }
   if (myJson.dues && myJson.isStudent) {
-    document.getElementById("result_img").src = "./images/developer2.png";
+    const img = document.getElementById("result_img");
+    img.setAttribute("src", "./images/developer2.png");
     let htmlData =
       "<ul>" +
       "<li> 학번: " +
@@ -38,7 +40,8 @@ const userAction = async () => {
       "</ul>";
     $(".result.active .show").append(htmlData);
   } else {
-    document.getElementById("result_img").src = "./images/developer3.png";
+    const img = document.getElementById("result_img");
+    img.setAttribute("src", "./images/developer3.png");
     let htmlData =
       "<ul>" +
       "<li> 학번: " +
