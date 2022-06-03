@@ -1,4 +1,4 @@
-const userAction = async () => {
+async function userAction() {
   // 이름과 학번 들고오기
   const Name = document.getElementById("name").value;
   const id = document.getElementById("id").value;
