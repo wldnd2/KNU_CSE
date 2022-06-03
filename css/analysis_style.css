@@ -43,6 +43,10 @@ textarea {
     -5px -5px 20px rgba(0, 0, 0, 0.08);
 }
 
+textarea::placeholder {
+  padding: 43% 0;
+}
+
 textarea::-webkit-scrollbar {
   width: 10px;
 }
