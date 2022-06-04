@@ -1,3 +1,5 @@
+const delay = (ms = 700) => new Promise((r) => setTimeout(r, ms));
+
 const userAction = async () => {
   let data = document.getElementById("info").value;
   if (data == "") {
@@ -10,6 +12,8 @@ const userAction = async () => {
   }
   let check = false;
   for (var i = 0; i < data.length; i++) {
+    // 딜레이
+    await delay();
     // API호출
     const response = await fetch(
       `https://raipen.gabia.io/API/checkDues/?number=${data[i][0]}&name=${data[i][1]}`
