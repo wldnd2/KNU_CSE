@@ -39,11 +39,23 @@
           <h2>Check Fee</h2>
           <div class="input_box">
             <i class="fa-solid fa-user"></i>
-            <input type="text" name="name" id="name" placeholder="Username" />
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Username"
+              onkeyup="if(window.event.keyCode==13){toggleSubmit();userAction();}"
+            />
           </div>
           <div class="input_box">
             <i class="fa-solid fa-address-card"></i>
-            <input type="text" name="id" id="id" placeholder="20--------" />
+            <input
+              type="text"
+              name="id"
+              id="id"
+              placeholder="20--------"
+              onkeyup="if(window.event.keyCode==13){toggleSubmit();userAction();}"
+            />
           </div>
           <div class="input_box">
             <input
