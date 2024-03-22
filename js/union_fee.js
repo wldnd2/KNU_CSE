@@ -4,7 +4,7 @@ async function userAction() {
   const id = document.getElementById("id").value;
   // API호출
   const response = await fetch(
-    `https://raipen.gabia.io/API/checkDues/?number=${id}&name=${Name}`
+    `https://locker.raipen.com/api/v2/student/checkDues/?number=${id}&name=${Name}`
   );
   // json저장
   const myJson = await response.json();

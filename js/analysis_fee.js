@@ -12,7 +12,7 @@ const userAction = async () => {
   for (var i = 0; i < data.length; i++) {
     // API호출
     const response = await fetch(
-      `https://raipen.gabia.io/API/checkDues/?number=${data[i][0]}&name=${data[i][1]}`
+      `https://locker.raipen.com/api/v2/student/checkDues/?number=${data[i][0]}&name=${data[i][1]}`
     );
     // json저장
     const myJson = await response.json();
